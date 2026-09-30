@@ -214,7 +214,7 @@ function vOnboarding() {
   const g = view.goal || 20;
   const opt = (m, l) => `<button class="${g === m ? 'on' : ''}" onclick="A.onbGoal(${m})"><b>${m}</b><span>${l}</span></button>`;
   return `<div class="onb pop">
-    <img src="icons/icon-192.png" alt="">
+    <img src="icon-192.png" alt="">
     <div><h1 class="h1">¡Hola!<br>Vítej v Hablo.</h1>
     <p class="muted" style="font-size:16px;line-height:1.5">Španělština od nuly do A1. Krátké lekce, opakování ve správný čas a výslovnost ke všemu.</p></div>
     <div style="display:flex;flex-direction:column;gap:8px">
@@ -764,7 +764,7 @@ function vDone() {
   const nextL = currentLesson(); const np = nextPart(nextL);
   const hasNext = dueCards().length > 0 || np !== null;
   return `<div class="done-wrap pop">
-    <img src="icons/icon-192.png" alt="" style="width:88px;height:88px;border-radius:24px;box-shadow:0 14px 30px rgba(194,80,46,.3)">
+    <img src="icon-192.png" alt="" style="width:88px;height:88px;border-radius:24px;box-shadow:0 14px 30px rgba(194,80,46,.3)">
     <div class="big">${title}</div>
     <div class="muted" style="font-size:16px">${acc >= 90 ? '¡Excelente! Skoro bez chyby.' : acc >= 70 ? '¡Bien! Chyby se ti vrátí v opakování.' : 'Nevadí, chyby jsou součást učení. Uvidíš je znovu.'}</div>
     <div class="done-stats">
